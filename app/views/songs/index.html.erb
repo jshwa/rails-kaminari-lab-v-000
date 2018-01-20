@@ -1,5 +1,5 @@
 <%= page_entries_info @songs %>
-<%= paginate @songs %>
+<%= paginate @songs, window: 2 %>
 
 <ul>
 <% @songs.each do |song| %>
