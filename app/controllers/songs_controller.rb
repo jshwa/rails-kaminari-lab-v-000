@@ -1,6 +1,6 @@
 class SongsController < ApplicationController
   def index
-    @songs = Song.all.page(params[:page])
+    @songs = Song.page(params[:page])
   end
 
   def show
